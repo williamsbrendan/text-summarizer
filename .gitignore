@@ -1,0 +1,14 @@
+import gensim
+from gensim.summarization import summarize
+
+# Input text to be summarized
+text = "Insert your text here"
+
+# Ratio of the summarized text compared to the original text
+ratio = 0.2 
+
+# Summarize the text using the TextRank algorithm
+summary = summarize(text, ratio=ratio)
+
+# Print the summary
+print(summary)
